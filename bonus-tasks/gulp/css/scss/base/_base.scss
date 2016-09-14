@@ -1,0 +1,29 @@
+/* ======================== base styles ========================= */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+  @media (min-width: 321px) {
+    max-width: 768px;
+  }
+  @media (min-width: 769px) {
+    max-width: 940px;
+  }
+}
+
+/*--- clearfix ---*/
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}

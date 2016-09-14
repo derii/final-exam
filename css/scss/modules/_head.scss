@@ -1,0 +1,96 @@
+.header {
+  background: #fff url(../img/header.png) 50% 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__wrap {
+    padding: 21px 22px 138px;
+    word-wrap: break-word;
+    @media (min-width: 321px) {
+      padding: 39px 50px 234px;
+      word-wrap: normal;
+    }
+    @media (min-width: 769px) {
+      padding: 39px 0 234px;
+    }
+  }
+  &__login {
+    max-width: 160px;
+    margin:0 auto;
+    @media (min-width: 321px) {
+      float: right;
+    }
+    &-login{
+      margin: 0px 21px 0 2px;
+      padding: 10px 0;
+    }
+    &-signup{
+      padding: 8px 15px;
+      border: 2px solid $white;
+      border-radius: 20px;
+    }
+  }
+  .login {
+    a {
+      float: left;
+      display: block;
+      color: $white;
+      font-size: 14px;
+    }
+  }
+  &__logo{
+    @media (min-width: 321px) {
+      float: left;
+    }
+  }
+  &__logo-link {
+    display: block;
+    margin-top: 118px;
+    letter-spacing: 0.9px;
+    color: $white;
+    font-size: 20px;
+    @media (min-width: 321px) {
+      margin-top: 9px;
+    }
+  }
+  &__slogan {
+    margin-top: 33px;
+    color: #fff;
+    font-size: 29px;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    @media (min-width: 321px) {
+      margin-top: 178px;
+      font-size: 51px;
+      line-height: 61px;
+    }
+  }
+  &__text {
+    margin-top: 12px;
+    padding: 0 22px;
+    color: $white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+    @media (min-width: 321px) {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+  }
+  &__findBtn {
+    display: block;
+    margin: 16px auto 0;
+    padding: 12px 40px;
+    border: 1px solid $pink;
+    border-radius: 20px;
+    background-color: $pink;
+    color: $white;
+    font-size: 14px;
+    @media (min-width: 321px) {
+      max-width: 228px;
+      margin-top: 37px;
+      padding: 12px 20px;
+    }
+  }
+}

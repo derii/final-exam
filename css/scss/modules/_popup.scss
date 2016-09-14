@@ -1,0 +1,126 @@
+/* ========================== PopUp window ======================================= */
+.popup h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 50px;
+	color: #8e44ad;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.popup h3 {
+	font-size: 30px;
+	color: #2980b9;
+	font-weight: bold;
+	margin-bottom: 20px;
+} 
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 0.2s;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #34495e;
+}
+.popup .close:hover {
+	color: #2ecc71;
+}
+.popup .content {
+	overflow: auto;
+}
+.thanks-text {
+	line-height: 30px;
+	color: #2980b9;
+	font-size: 20px;
+}
+.thanks {
+	font-size: 20px;
+	color: #d35400;
+	text-transform: uppercase;
+}
+.thanks {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+.thanks-img {
+	display: block;
+	
+	margin: 10px auto;
+}
+
+/*Let's make it appear when the page loads*/
+.overlay:target:before {
+    display: none;
+}
+.overlay:before {
+	content:"";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	z-index: 9;
+}
+.overlay .popup {
+	background: #fff;
+	border: 10px solid #1abc9c;
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 25%;
+	padding: 25px;
+	margin: 50px auto;
+	z-index: 10;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
+}
+.overlay:target .popup {
+    top: -300%;
+}
+
+@media screen and (max-width: 768px){
+	.overlay .popup {
+		width: 90%;
+		left: 5%;
+	}
+}
+.item-note {
+	margin: 20px auto;
+	color: #bdc3c7;
+	font-size: 14px;
+	text-align: center;
+}

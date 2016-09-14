@@ -1,0 +1,20 @@
+{
+  "name": "bonus-task",
+  "version": "1.0.0",
+  "description": "finalExamBonus:",
+  "main": "index.js",
+  "author": "bogdan derii",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "start"
+  }
+}

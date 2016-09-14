@@ -1,0 +1,112 @@
+.footer {  
+    margin-top: 40px;
+    border-top: 4px solid $pink;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-top: 90px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__header-main{
+      color: $pink;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 17px;
+      letter-spacing: 1px;
+      @media screen and (min-width: 768px) {
+        float: left;
+        margin-top: 37px;
+        margin-left: 38px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-top: 38px;
+        margin-left: 0;
+      }
+    }
+    &__company {
+      @media screen and (min-width: 768px) {
+        float: left;
+      }
+    }
+    &__header {
+      margin-top: 14px;
+      color: $gray;
+      font-size: 14px;
+      @media screen and (min-width: 768px) {
+        margin-top: 37px;
+        margin-left: 82px;
+      }
+      @media screen and (min-width: 1440px) {
+          margin-top: 38px;
+          margin-left: 94px;
+      }
+    }
+    &__header_partners {
+      margin-top: 12px;
+      @media screen and (min-width: 768px) {
+        float: left;
+        margin-top: 37px;
+        margin-left: 103px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-top: 38px;
+        margin-left: 92px;
+      }
+    }
+    &__menu {
+      display: inline-block;
+      margin-top: 4px;
+      @media screen and (min-width: 768px) {
+        display: block;
+        margin-top: 16px;
+        margin-left: 82px;
+        text-align: left;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-left: 94px;
+      }
+    }
+    &__menu-item {
+      display: inline-block;
+      color: $light-gray;
+      font-size: 14px;
+      margin: 3px 5px;
+      font-family: Roboto, sans-serif;
+      @media screen and (min-width: 768px) {
+        margin: 0 0 10px;
+        display: block;
+        text-align: left;
+      }
+    }
+    &__link {
+      color: inherit;
+    }
+    &__logoWrapper {
+      @media screen and (min-width: 768px) {
+        float: left;
+        margin-left: 122px;
+        margin-top: 21px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-left: 368px;
+        margin-top: 23px;
+      }
+    }
+    &__header_designed {
+      color: $dark-grey;
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 17px;
+      letter-spacing: 1px;
+      font-family: Montserrat,sans-serif;
+      @media screen and (min-width: 768px) {
+        margin-left: 31px;
+      }
+    }
+    &__logo {
+      margin: 8px 0;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+}

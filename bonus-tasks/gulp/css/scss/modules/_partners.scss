@@ -1,0 +1,121 @@
+.partners {
+  text-align: center;
+  &__wrapper {
+    font-size: 0;
+  }
+  &__header {
+    margin: 34px 20px 13px 12px;
+    color: $gray;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    @media (min-width: 768px) {
+      margin: 95px 20px 32px 12px;
+    }
+  }
+  &__person {
+    display: inline-block;
+    max-width: 258px;
+    width: 100%;
+    margin-bottom: 27px;
+    vertical-align: top;
+    @media (min-width: 768px) {
+      margin-bottom: 56px;
+    }
+    @media (min-width: 940px) {
+    max-width: 235px;
+    }
+  }
+  &__link {
+    display: inline-block;
+  }
+  &__link-photo {
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%;
+      border: 4px solid #fff;
+      bottom: -4px;
+      right: -4px;
+      box-sizing: border-box;
+    }
+  }
+  &__person_1 &__link-photo {
+    background-image: url(../img/partner-1.png);
+  }
+  &__person_1 &__link-photo:after {
+    background-color: $pink;
+    background-image: url(../img/tv.png);
+  }
+  &__person_2 &__link-photo {
+    background-image: url(../img/partner-2.png);
+  }
+  &__person_2 &__link-photo:after {
+    background-color: $tifany;
+    background-image: url(../img/tea.png);
+  }
+  &__person_3 &__link-photo {
+    background-image: url(../img/partner-3.png);
+  }
+  &__person_3 &__link-photo:after {
+    background-color: $orange;
+    background-image: url(../img/lab.png);
+  }
+  &__person_4 &__link-photo {
+    background-image: url(../img/partner-4.png);
+  }
+  &__person_4 &__link-photo:after {
+    background-color: $blue;
+    background-image: url(../img/plane.png);
+  }
+  &__name {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    color: $gray;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__description {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-gray;
+    font-family: Roboto,sans-serif;
+  }
+  &__seeOther {
+    display: inline-block;
+    max-width: 281px;
+    width: 100%;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    padding: 12px 71px;
+    font-weight: 700;
+    letter-spacing: .1px;
+    font-size: 14px;
+    @media (min-width: 768px) {
+      margin-top: -18px;
+      padding: 12px 27px;
+      max-width: 193px;
+    }
+  }
+}
